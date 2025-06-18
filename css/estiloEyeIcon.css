@@ -1,0 +1,23 @@
+/* Estilos para el ícono del ojo en el campo de contraseña */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.eye-icon-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    pointer-events: none; /* Para que los clics pasen al ícono */
+}
+
+.eye-icon {
+    cursor: pointer;
+    color: #6c757d;
+    pointer-events: auto; /* Para que el ícono reciba los clics */
+    z-index: 10;
+}

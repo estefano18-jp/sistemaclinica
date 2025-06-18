@@ -1,0 +1,46 @@
+/* Estilos para detalles del doctor */
+.doctor-details {
+  padding: 10px;
+}
+
+.doctor-avatar {
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.doctor-avatar img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-header h5 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* Añadir animación al cargar el modal */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+/* Estilos para mejorar la presentación en el modal */
+@media (max-width: 768px) {
+  .doctor-details .row {
+      flex-direction: column;
+  }
+  
+  .doctor-details .col-md-4 {
+      margin-bottom: 20px;
+  }
+}

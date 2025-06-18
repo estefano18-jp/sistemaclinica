@@ -1,0 +1,1 @@
+<?php /*RUTA: sistemasclinica/models/Tratamiento.php*/?>

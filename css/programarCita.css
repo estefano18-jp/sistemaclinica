@@ -1,0 +1,330 @@
+/* Estilos para la página de programación de citas */
+
+/* Estilos generales */
+body {
+  background-color: #f5f8fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.required-field::after {
+  content: " *";
+  color: red;
+}
+
+/* Estilos de tarjetas */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  border: none;
+}
+
+.card-header {
+  border-radius: 8px 8px 0 0 !important;
+  font-weight: 600;
+  padding: 12px 20px;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+/* Estilos de la barra de progreso */
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background-color: #007bff;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Número de paso */
+.step-number {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Imagen del doctor */
+.doctor-image-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 5px solid #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para las alertas */
+.alert {
+  border-radius: 6px;
+  border: none;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  background-color: rgba(40, 167, 69, 0.15);
+  border-left: 4px solid #28a745;
+}
+
+.alert-info {
+  background-color: rgba(23, 162, 184, 0.15);
+  border-left: 4px solid #17a2b8;
+}
+
+.alert-warning {
+  background-color: rgba(255, 193, 7, 0.15);
+  border-left: 4px solid #ffc107;
+}
+
+.alert-danger {
+  background-color: rgba(220, 53, 69, 0.15);
+  border-left: 4px solid #dc3545;
+}
+
+/* Estilos para los botones */
+.btn {
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Estilos para tablas */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.table td {
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.06);
+}
+
+/* Estilos para badges */
+.badge {
+  padding: 6px 10px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* Estilos para listas */
+.list-group-item {
+  border-left: none;
+  border-right: none;
+  padding: 12px 15px;
+}
+
+.list-group-item:first-child {
+  border-top: none;
+}
+
+/* Animaciones */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .card-body {
+      padding: 15px;
+  }
+  
+  .doctor-image-container {
+      width: 120px;
+      height: 120px;
+  }
+  
+  .step-number {
+      display: none;
+  }
+}
+
+/* Estilos para inputs */
+.form-control {
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-select {
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+
+/* Estilo para el precio de consulta */
+.alert-info, .alert-primary {
+  width: 100%;
+  display: block;
+}
+
+/* Si el precio está dentro de un div específico con un ID */
+#precioConsulta, .precio-consulta {
+  width: 100%;
+  display: block;
+}
+/* NUEVO*/
+/* Estilos para vista semanal */
+.fc-dayGridWeek-view .fc-daygrid-day-frame {
+  min-height: 100px !important; /* Altura mínima para mostrar eventos */
+}
+
+/* Asegurar que los días en la vista semanal tengan suficiente espacio vertical */
+.fc-dayGridWeek-view .fc-daygrid-day-events {
+  margin-bottom: 8px;
+}
+
+/* Estilo para el enlace "+más" */
+.fc-dayGridWeek-view .fc-daygrid-more-link {
+  font-size: 0.85em;
+  color: #0d6efd;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  padding: 1px 3px;
+  margin-top: 2px;
+}
+
+/* Corregir alineación de días de la semana en vista semanal */
+.fc-dayGridWeek-view .fc-col-header-cell {
+  text-align: center;
+}
+
+/* Altura uniforme para las celdas de día en vista semanal */
+.fc-dayGridWeek-view .fc-daygrid-day {
+  height: auto !important;
+}
+
+/**/
+/* NUEVOS ESTILOS: Eliminar borde azul alrededor del calendario */
+.fc {
+  border: none !important;
+}
+
+/* Eliminar todos los bordes externos del calendario */
+.fc-theme-standard .fc-scrollgrid {
+  border: 1px solid #ddd !important;
+}
+
+/* Asegurar que no hay borde en el contenedor principal */
+.calendar-container, .calendar-card, .fc-view-harness {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Asegurar que el contenedor del calendario no tenga borde */
+.card.calendar-card .card-body {
+  border: none !important;
+}
+
+/* Eliminar focus outline de todos los elementos del calendario */
+.fc *:focus, .fc-scroller, .fc-view, .fc-view-harness, .fc-scroller {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/*NUEVO*/
+/* Estilos optimizados para el calendario variable */
+.fc .fc-daygrid-body {
+  /* Asegurar que la transición sea suave cuando cambia la altura */
+  transition: height 0.3s ease;
+}
+
+/* Mejorar diseño visual para las semanas */
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+  min-height: 2em;
+  position: relative;
+}
+
+/* Días de otros meses (días que se eliminan con fixedWeekCount false) */
+.fc .fc-day-other {
+  background-color: #f9f9f9;
+}

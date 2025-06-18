@@ -1,0 +1,1 @@
+<?php /*RUTA: sistemaclinica/controllers/tratamiento.controller.php*/?>
